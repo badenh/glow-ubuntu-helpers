@@ -1,14 +1,7 @@
 # glow-ubuntu-helpers
-Ubuntu OS variant helper install/configure scripts for Pytorch Glow
+Ubuntu OS variant helper install/configure scripts for Pytorch Glow <https://github.com/pytorch/glow>
 
-Ubuntu Versions | LLVM Versions
--------------------------------
-16.04 Xenial Xerius | LLVM 7, LLVM 8, LLVM 9
-18.04 Bionic Beaver | LLVM 8, LLVM 9
-19.04 Disco Dingo | LLVM 8, LLVM 9
-
-
-## 16.04 and LLVM 7
+## Ubuntu 16.04 and LLVM 7
 Building Glow on Ubuntu 16.04 with LLVM 7 will fail because LLVM 7 distribution from Xenial uses an older C++ ABI.
 
 To update, you can run:
@@ -17,17 +10,17 @@ sudo apt-get install clang clang-8 cmake graphviz libpng-dev \
     libprotobuf-dev llvm-8 llvm-8-dev ninja-build protobuf-compiler wget \
     opencl-headers libgoogle-glog-dev
 
-## 16.04 Xenial Xerius and LLVM 8
+## Ubuntu 16.04 Xenial Xerius and LLVM 8
 
-## 16.04 Xenial Xerius and LLVM 9
+## Ubuntu 16.04 Xenial Xerius and LLVM 9
 
-## 18.04 Bionic Beaver and LLVM 8
+## Ubuntu 18.04 Bionic Beaver and LLVM 8
 
-## 18.04 Bionic Beaver and LLVM 9
+## Ubuntu 18.04 Bionic Beaver and LLVM 9
 
-## 19.04 Disco Dingo and LLVM 8
+## Ubuntu 19.04 Disco Dingo and LLVM 8
 
-## 19.04 Disco Dingo and LLVM 9
+## Ubuntu 19.04 Disco Dingo and LLVM 9
 
 ## General Notes
 
