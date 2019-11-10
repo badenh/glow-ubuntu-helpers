@@ -78,4 +78,4 @@ Glow uses the system default C/C++ compiler (/usr/bin/c++), and so you may also 
 
 Glow should build just fine with gcc (e.g. gcc 5.4), but we mostly use clang and are more attentive to compatibility with clang.
 
-Finally, in order to support the ONNX net serialization format, Glow requires protobuf >= 2.6.1, but the above command may install older version on older Ubuntu (e.g. 14.04). If this is the case, we suggest to look at utils/install_protobuf.sh to install a newer version from source.
+Finally, in order to support the ONNX net serialization format, Glow requires protobuf >= 2.6.1, but the above command may install older version on older Ubuntu (e.g. 14.04). If this is the case, we suggest to look at <https://github.com/pytorch/glow/blob/master/utils/install_protobuf.sh> to install a newer version from source.
