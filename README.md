@@ -6,9 +6,9 @@ Building Glow on Ubuntu 16.04 with LLVM 7 will fail because LLVM 7 distribution 
 
 To update, you can run:
 
-sudo apt-get install clang clang-8 cmake graphviz libpng-dev \
-    libprotobuf-dev llvm-8 llvm-8-dev ninja-build protobuf-compiler wget \
-    opencl-headers libgoogle-glog-dev
+    sudo apt-get install clang clang-8 cmake graphviz libpng-dev \
+        libprotobuf-dev llvm-8 llvm-8-dev ninja-build protobuf-compiler wget \
+        opencl-headers libgoogle-glog-dev
 
 ## Ubuntu 16.04 Xenial Xerius and LLVM 8
 
