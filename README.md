@@ -1,5 +1,7 @@
-# glow-ubuntu-helpers
+# glow-ubuntu-install-helpers
+
 Ubuntu OS variant helper install/configure scripts for Pytorch Glow <https://github.com/pytorch/glow>
+By necessity, there's some comments / configuration with LLVM and clang as well.
 
 ## Ubuntu 16.04 Xenial Xerius and LLVM 7
 Ubuntu 16.04 Xenial Xerius ships with an outdated version of LLVM - see <https://packages.ubuntu.com/xenial/devel/llvm>
@@ -60,9 +62,21 @@ Then follow the configure/build instructions from <https://github.com/pytorch/gl
 
 TODO
 
+## Ubuntu 19.04 Disco Dingo and LLVM 9
+
+TODO
+
+## Ubuntu 20.04 Focal Fossa and LLVM 10
+
+TODO
+
+## Ubuntu 20.04 Focal Fossa and LLVM 10
+
+TODO
+
 ## General Notes
 
-It may be desirable to use update-alternatives to manage the version of clang/clang++:
+It may be desirable to use update-alternatives to manage the version of clang/clang++ on your system:
 
     sudo update-alternatives --install /usr/bin/clang clang \
         /usr/lib/llvm-8/bin/clang 50
@@ -79,3 +93,7 @@ Glow uses the system default C/C++ compiler (/usr/bin/c++), and so you may also 
 Glow should build just fine with gcc (e.g. gcc 5.4), but we mostly use clang and are more attentive to compatibility with clang.
 
 Finally, in order to support the ONNX net serialization format, Glow requires protobuf >= 2.6.1, but the above command may install older version on older Ubuntu (e.g. 14.04). If this is the case, we suggest to look at <https://github.com/pytorch/glow/blob/master/utils/install_protobuf.sh> to install a newer version from source.
+
+## LLVM Packaging
+
+LLVM is packaged for various distros, see https://apt.llvm.org/
