@@ -4,7 +4,7 @@ Ubuntu OS variant helper install/configure scripts for Pytorch Glow <https://git
 By necessity, there's some comments / configuration with LLVM and clang as well.
 
 ## Ubuntu 16.04 Xenial Xerius and LLVM 7
-Ubuntu 16.04 Xenial Xerius ships with an outdated version of LLVM - see <https://packages.ubuntu.com/xenial/devel/llvm>
+Ubuntu 16.04 Xenial Xerius ships with an outdated version of LLVM (version 6 ... ) - see <https://packages.ubuntu.com/xenial/devel/llvm>
 
 Building Glow on Ubuntu 16.04 with LLVM 7 will fail because LLVM 7 distribution from Xenial uses an older C++ ABI.
 
@@ -62,17 +62,20 @@ Then follow the configure/build instructions from <https://github.com/pytorch/gl
 
 TODO
 
-## Ubuntu 19.04 Disco Dingo and LLVM 9
+## Ubuntu 19.04 Disco Dingo and LLVM 10
+
+TODO
+
+## Ubuntu 20.04 Focal Fossa and LLVM 9
+
+Ubuntu 20.04 Focal Fossa ships with LLVM 10 by default - see https://packages.ubuntu.com/focal/llvm
+If for some reason you wish to downgrade to LLVM <10, then you'll need to do a couple of things:
 
 TODO
 
 ## Ubuntu 20.04 Focal Fossa and LLVM 10
 
-TODO
-
-## Ubuntu 20.04 Focal Fossa and LLVM 10
-
-TODO
+Ubuntu 20.04 Focal Fossa ships with LLVM 10 by default - see https://packages.ubuntu.com/focal/llvm
 
 ## General Notes
 
