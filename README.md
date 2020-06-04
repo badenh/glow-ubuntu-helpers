@@ -108,3 +108,7 @@ Finally, in order to support the ONNX net serialization format, Glow requires pr
 ## LLVM Packaging
 
 LLVM is packaged for various distros, see https://apt.llvm.org/
+
+## Ubuntu Packaging/Inclusion of LLVM
+
+Ubuntu packages and includes LLVM and some related tools, see https://packages.ubuntu.com/search?suite=default&section=all&arch=any&keywords=llvm&searchon=names
