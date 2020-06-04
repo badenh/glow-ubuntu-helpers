@@ -32,7 +32,7 @@ TODO
 
 ## Ubuntu 18.04 Bionic Beaver and LLVM 8
 
-Ubuntu 18.04 Xenial Xerius ships with an outdated version of LLVM - see <https://packages.ubuntu.com/bionic/llvm>
+Ubuntu 18.04 Xenial Xerius ships with an outdated version of LLVM (version 6 ...) - see <https://packages.ubuntu.com/bionic/llvm>
 
 To update, you can run:
 
