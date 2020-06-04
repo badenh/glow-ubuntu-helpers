@@ -58,11 +58,19 @@ If you want to build Glow against LLVM 8, you can simply install the other depen
 
 Then follow the configure/build instructions from <https://github.com/pytorch/glow#configure-and-build>
 
-## Ubuntu 19.04 Disco Dingo and LLVM 9
+## Ubuntu 19.04 Disco Dingo and LLVM 10
 
 TODO
 
-## Ubuntu 19.04 Disco Dingo and LLVM 10
+## Ubuntu 19.10 Eoan Ermine and LLVM 9
+
+Ubuntu 19.10 Eoan Ermine ships with LLVM 9 by default - see https://packages.ubuntu.com/eoan/llvm
+
+TODO
+
+## Ubuntu 19.10 Eoan Ermine and LLVM 10
+
+Ubuntu 19.10 Eoan Ermine ships with LLVM 9 by default - see https://packages.ubuntu.com/eoan/llvm
 
 TODO
 
