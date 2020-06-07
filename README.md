@@ -6,10 +6,9 @@ By necessity, there's some comments / configuration with LLVM and clang as well.
 ## Summary of what works/what doesnt
 
 | Ubuntu Version | LLVM At Install | Buildable | Upgrade Options |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| -------------- | --------------- | --------- | --------------- |
+| 16.04          | LLVM 6          | No        | LLVM 8+         |
+
 
 ## Ubuntu 16.04 Xenial Xerius and LLVM 7
 Ubuntu 16.04 Xenial Xerius ships with an outdated version of LLVM (version 6 ... ) - see <https://packages.ubuntu.com/xenial/devel/llvm>
