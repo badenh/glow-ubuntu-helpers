@@ -5,9 +5,22 @@ By necessity, there's some comments / configuration with LLVM and clang as well.
 
 ## Summary of what works/what doesnt
 
-| Ubuntu Version | LLVM At Install | Buildable | Upgrade Options |
-| -------------- | --------------- | --------- | --------------- |
-| 16.04          | LLVM 6          | No        | LLVM 8+         |
+| Ubuntu Version | LLVM Installed | Buildable | Upgrade Options |
+| -------------- | -------------- | --------- | --------------- |
+| 16.04          | LLVM 6         | No        | To LLVM 8+      |
+| 16.04          | LLVM 7         | No        | To LLVM 8+      |
+| 16.04          | LLVM 8         | Yes       |                 |
+| 16.04          | LLVM 9         | Yes       |                 |
+| 16.04          | LLVM 10        | Yes       |                 |
+| 18.04          | LLVM 6         | No        | To LLVM 8+      |
+| 18.04          | LLVM 7         | No        | To LLVM 8+      |
+| 18.04          | LLVM 8         | Yes       |                 |
+| 18.04          | LLVM 9         | Yes       |                 |
+| 18.04          | LLVM 10        | Yes       |                 |
+| 19.04          | LLVM 8         | Yes       |                 |
+| 19.10          | LLVM 9         | Yes       |                 |
+| 20.04          | LLVM 10        | Yes       |                 |
+| -------------- | -------------- | --------- | --------------- |
 
 
 ## Ubuntu 16.04 Xenial Xerius and LLVM 7
@@ -15,7 +28,7 @@ Ubuntu 16.04 Xenial Xerius ships with an outdated version of LLVM (version 6 ...
 
 Building Glow on Ubuntu 16.04 with LLVM 7 *will fail* because LLVM 7 distribution from Xenial uses an older C++ ABI.
 
-To update to LLVM 8, you can run:
+On Ubuntu 16.04, the minimum you need to upgrade to is LLVM 8. To update to LLVM 8, you can run:
 
     sudo apt-get install clang clang-8 cmake graphviz libpng-dev \
         libprotobuf-dev llvm-8 llvm-8-dev ninja-build protobuf-compiler wget \
@@ -64,6 +77,10 @@ If you want to build Glow against LLVM 8, you can simply install the other depen
         opencl-headers libgoogle-glog-dev
 
 Then follow the configure/build instructions from <https://github.com/pytorch/glow#configure-and-build>
+
+## Ubuntu 19.04 Disco Dingo and LLVM 9
+
+TODO
 
 ## Ubuntu 19.04 Disco Dingo and LLVM 10
 
