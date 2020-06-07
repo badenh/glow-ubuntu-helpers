@@ -20,8 +20,6 @@ By necessity, there's some comments / configuration with LLVM and clang as well.
 | 19.04          | LLVM 8         | Yes       |                 |
 | 19.10          | LLVM 9         | Yes       |                 |
 | 20.04          | LLVM 10        | Yes       |                 |
-| -------------- | -------------- | --------- | --------------- |
-
 
 ## Ubuntu 16.04 Xenial Xerius and LLVM 7
 Ubuntu 16.04 Xenial Xerius ships with an outdated version of LLVM (version 6 ... ) - see <https://packages.ubuntu.com/xenial/devel/llvm>
@@ -54,7 +52,9 @@ Then follow the configure/build instructions from <https://github.com/pytorch/gl
 
 Ubuntu 18.04 Xenial Xerius ships with an outdated version of LLVM (version 6 ...) - see <https://packages.ubuntu.com/bionic/llvm> and must be updated in order to build Glow.
 
-To update to LLVM 8, you can run:
+Building Glow on Ubuntu 16.04 with LLVM 7 *will fail* because LLVM 7 distribution from Xenial uses an older C++ ABI.
+
+On Ubuntu 18.04, the minimum you need to upgrade to is LLVM 8. To update to LLVM 8, you can run:
 
     sudo apt-get install clang clang-8 cmake graphviz libpng-dev \
         libprotobuf-dev llvm-8 llvm-8-dev ninja-build protobuf-compiler wget \
